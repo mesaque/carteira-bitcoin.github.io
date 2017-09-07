@@ -6604,6 +6604,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 	<div id="main">
 		<div id="culturemenu">
             <div class="culturemenurow">
+                <span><a href="?culture=pt-br" id="culturept-br" class="selected" onclick="ninja.translator.translate('pt-br'); return false;">Português</a></span> |
                 <span><a href="?culture=en" id="cultureen" onclick="ninja.translator.translate('en'); return false;">English</a></span> |
                 <span><a href="?culture=es" id="culturees" onclick="ninja.translator.translate('es'); return false;">Español</a></span> |
                 <span><a href="?culture=fr" id="culturefr" onclick="ninja.translator.translate('fr'); return false;">Français</a></span> |
@@ -6616,8 +6617,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
                 <span><a href="?culture=hu" id="culturehu" onclick="ninja.translator.translate('hu'); return false;">Magyar</a></span> |
                 <span><a href="?culture=jp" id="culturejp" onclick="ninja.translator.translate('jp'); return false;">日本語</a></span> |
                 <span><a href="?culture=zh-cn" id="culturezh-cn" onclick="ninja.translator.translate('zh-cn'); return false;">简体中文</a></span> |
-                <span><a href="?culture=ru" id="cultureru" onclick="ninja.translator.translate('ru'); return false;">Русский</a></span> |
-                <span><a href="?culture=pt-br" id="culturept-br" class="selected" onclick="ninja.translator.translate('pt-br'); return false;">português</a></span>
+                <span><a href="?culture=ru" id="cultureru" onclick="ninja.translator.translate('ru'); return false;">Русский</a></span> 
             </div>
 		</div>
 		<div id="tagline">Open Source JavaScript Client-Side Bitcoin Wallet Generator</div>
@@ -7745,6 +7745,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		},
 
 		translate: function (culture) {
+			culture = culture.toLowerCase();
 			var dict = translator.translations[culture];
 			if (dict) {
 				// set current culture
