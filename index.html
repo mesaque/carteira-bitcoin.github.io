@@ -6,8 +6,8 @@
 
 	Notice of Copyrights and Licenses:
 	***********************************
-	The bitaddress.org project, software and embedded resources are copyright bitaddress.org (pointbiz). 
-	The bitaddress.org name and logo are not part of the open source license.
+	The GERADORCARTEIRABITCOIN.COM.BR project, software and embedded resources are copyright GERADORCARTEIRABITCOIN.COM.BR (pointbiz). 
+	The GERADORCARTEIRABITCOIN.COM.BR name and logo are not part of the open source license.
 
 	Portions of the all-in-one HTML document contain JavaScript codes that are the copyrights of others. 
 	The individual copyrights are included throughout the document along with their licenses.
@@ -24,8 +24,8 @@
 	window.Bitcoin			MIT License
 	window.Crypto_scrypt		MIT License
 
-	The bitaddress.org software is available under The MIT License (MIT)
-	Copyright (c) 2011-2016 bitaddress.org (pointbiz)
+	The GERADORCARTEIRABITCOIN.COM.BR software is available under The MIT License (MIT)
+	Copyright (c) 2011-2016 GERADORCARTEIRABITCOIN.COM.BR (pointbiz)
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
 	associated documentation files (the "Software"), to deal in the Software without restriction, including 
@@ -42,7 +42,6 @@
 	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-	GitHub Repository: https://github.com/pointbiz/bitaddress.org
 	-->
 
 	<title>Gerador de Carteiras Bitcoin ONLINE</title>
@@ -1442,7 +1441,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * <body onclick='SecureRandom.seedTime();' onkeypress='SecureRandom.seedTime();'>
 * in your main HTML document.
 * 
-* Copyright Tom Wu, bitaddress.org  BSD License.
+* Copyright Tom Wu, GERADORCARTEIRABITCOIN.COM.BR  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
 (function () {
@@ -1629,7 +1628,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 * Ported loosely from BouncyCastle's Java EC code
 * Only Fp curves implemented for now
 * 
-* Copyright Tom Wu, bitaddress.org  BSD License.
+* Copyright Tom Wu, GERADORCARTEIRABITCOIN.COM.BR  BSD License.
 * http://www-cs-students.stanford.edu/~tjw/jsbn/LICENSE
 */
 (function () {
@@ -1691,7 +1690,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	* returns the right value - if none exists it returns null.
 	* 
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by GERADORCARTEIRABITCOIN.COM.BR
 	*/
 	ec.FieldElementFp.prototype.sqrt = function () {
 		if (!this.q.testBit(0)) throw new Error("even value of q");
@@ -1741,7 +1740,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by GERADORCARTEIRABITCOIN.COM.BR
 	*/
 	ec.FieldElementFp.fastLucasSequence = function (p, P, Q, k) {
 		// TODO Research and apply "common-multiplicand multiplication here"
@@ -1970,7 +1969,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 		return R;
 	};
 
-	// patched by bitaddress.org and Casascius for use with Bitcoin.ECKey
+	// patched by GERADORCARTEIRABITCOIN.COM.BR and Casascius for use with Bitcoin.ECKey
 	// patched by coretechs to support compressed public keys
 	ec.PointFp.prototype.getEncoded = function (compressed) {
 		var x = this.getX().toBigInteger();
@@ -2175,7 +2174,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 	};
 
 	// for now, work with hex strings because they're easier in JS
-	// compressed support added by bitaddress.org
+	// compressed support added by GERADORCARTEIRABITCOIN.COM.BR
 	ec.CurveFp.prototype.decodePointHex = function (s) {
 		var firstByte = parseInt(s.substr(0, 2), 16);
 		switch (firstByte) { // first byte
@@ -2220,7 +2219,7 @@ if (typeof Crypto == "undefined" || !Crypto.util) {
 
 	/*
 	* Copyright (c) 2000 - 2011 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)
-	* Ported to JavaScript by bitaddress.org
+	* Ported to JavaScript by GERADORCARTEIRABITCOIN.COM.BR
 	*
 	* Number yTilde
 	* BigInteger X1
@@ -6367,6 +6366,37 @@ Bitcoin.Util = {
 })();
 	</script>
 	<style type="text/css">
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+     color: red;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+input[type="text"] {
+     width: 100%; 
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+}
 .more { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDEvMDIvMTLltnQyAAAB1UlEQVQ4jYWTS04bQRCGv3q0x8gMYJCwknCGLDgLVwiH4grhLFaUXdhkQ0A8pBg/FOLpnmbhMYzxRKlNS1Vdf/31V5XknGnb+eXJCBjzbzu9OLu+azu845Opysej4wHmshF4uJ2TUrb3CV0gIBAKRboC5C2vdkDE9fdty6/xDegvXz+NgDbFUejZ+PjDgExmtpxS9vYwMe5u5iyX8RRoa5Ic+C4qx9KUN1MGu4E618yqJ5axAp44KA7ZL3eYzp/HKdVIw7WK8d6BuDvcod9TQlBEIOXEdPlElSoUJabIIs4Z7h9yNDwgqOMayLXw7epHVIBggrsgspZPUBQyiCgugRQji7TAVDF1XB2TlQoOYCqovkmpopS9fcoiM3ue0rOCYf8IU8NklWxiiOQ3EPXtWagIqo6KYWYEc4IGvMViA6RrnCJKVS9B8ypRHG1YKNa0Ur+C+MPt/I2BKWVZUO4FgvQ47PcptEDF+T2Z8TiZUMWIyGtpd+Bze5VTSqP57O/4YG+AN/RXbSiPkwmL5z/be/L+mM4vT2JKeUW7EXD1erMz/Lo4u77f0K9DDhdA1XG11jh9vWBb99Z9gAg5QZ2hzpmUa0RSW4f/gqSY0s3Vz+tufEjvHS8Tg6BXC7qVbQAAAABJRU5ErkJggg==)
 			no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; cursor: pointer; }
 .less { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAK6wAACusBgosNWgAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDEvMDIvMTLltnQyAAABuklEQVQ4ja2US25TQRBFT336OSEY5ESyBfEakNiLt0AW5S2QvQQxAiZIYBwSz/yByH7dxcB2bPMME+hJS/W5fetWVUtE8K/HfzdcXfdfqsr4onuGuRz4Jrdzcg6Gg9HfQYAxAqmlSMMlQJO5/oliE4AtQLcR++btZQ+wPVsvVXbTfXFGEMyWU9rVM0yMu/Gc5bJ+DdztxWcH3otKVzbPmyq5LnwfzSgEBMxlhqJEBFWVKKUgG66rur53oH7aOeWkUlJSRCBHZracssorlLXttHpCpzonaYukjmsiivDu08daAZIJ7oLIVg9BUQgQUVwSua5Z5AWmiqnj6pisVXAAU0F1J6WK0q6e024Fs4cplbXonFxgapisk00MkdiBqDd7oSKoOiqGmZHMSZrwPRYHIMfaKaKsyhI01oni6IaFYptSyiOIT27nOwaq5FyQrUAIC/nBhK+UErRSos55z4878CrneJyTnHOvquymf3mOb+hvy/jw+QuLh5/NORkORvsGrq77dc6xpr0RcH07y3oF8G04GN0f6HdEDhdA1XG1vXb6dsAa+3Z8AREiQwkoEeQoiBzocHDkf/wnvwC5IpRVsUDNUgAAAABJRU5ErkJggg==)
@@ -6655,9 +6685,9 @@ input[type=checkbox] { position: relative; z-index: 20; }
 		</ul>
 		
 		<div id="generate">
-			<span id="generatelabelbitcoinaddress">Generating Bitcoin Address...</span><br />
+			<h3 id="generatelabelbitcoinaddress" class="blink_text" > Generating Bitcoin Address...</h3>
 			<span id="generatelabelmovemouse">MOVE your mouse around to add some extra randomness... </span><span id="mousemovelimit"></span><br />
-			<span id="generatelabelkeypress">OR type some random characters into this textbox</span> <input type="text" id="generatekeyinput" onkeydown="ninja.seeder.seedKeyPress(event);" /><br />
+			<span id="generatelabelkeypress">OR type some random characters into this textbox</span><br /> <input type="text" id="generatekeyinput" onkeydown="ninja.seeder.seedKeyPress(event);" /><br />
 			<div id="seedpooldisplay"></div>
 		</div>
 
@@ -7015,7 +7045,7 @@ input[type=checkbox] { position: relative; z-index: 20; }
 				<div class="tooltip" id="statusprotocolbad">
 					<span class="statuswarn" id="statuslabelprotocolbad">&#9888; Think twice!</span>
 					<span id="statuslabelprotocolbad1">You appear to be running this generator online from a live website. For valuable wallets it is recommended to</span>
-					<a id="statuslabelprotocolbad2" href="https://github.com/pointbiz/bitaddress.org/archive/v3.3.0.zip">download</a>
+					<a id="statuslabelprotocolbad2" href="https://github.com/pointbiz/GERADORCARTEIRABITCOIN.COM.BR/archive/v3.3.0.zip">download</a>
 					<span id="statuslabelprotocolbad3">the zip file from GitHub and run this generator offline as a local html file.</span>
 					<br /><br /><input type="button" value="OK" class="button" id="statusokprotocolbad" onclick="document.getElementById('statusprotocolbad').style.display = 'none';" />
 				</div>
@@ -7046,14 +7076,9 @@ input[type=checkbox] { position: relative; z-index: 20; }
 					<a href="CHANGELOG.txt.asc" target="_blank"><span id="footerlabelversion">Version History</span> (3.3.0)</a>
 					
 				</span>
-				<span class="item">527B 5C82 B1F6 B2DB 72A0<br />ECBF 8749 7B91 6397 4F5A</span>
-				<span class="item">
-					(<a href="pointbiz_bitaddress.org.asc" target="_blank" id="footerlabelpgp">PGP</a>)
-					(<a href="javascript:window.location=window.location.pathname+'.sig';" target="_blank" id="footerlabelsig">sig</a>)
-				</span>
 			</div>
 			<div class="copyright">
-				<span id="footerlabelcopyright1">Copyright bitaddress.org.</span>
+				<span id="footerlabelcopyright1">Copyright GERADORCARTEIRABITCOIN.COM.BR</span>
 				<span id="footerlabelcopyright2">JavaScript copyrights are included in the source.</span>
 				<span id="footerlabelnowarranty">No warranty.</span>
 			</div>
@@ -7943,7 +7968,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub Repository",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Copyright JavaScriptu je uveden ve zdrojovém kódu.",
 		"footerlabelnowarranty": "Bez záruky.",
 
@@ -8109,7 +8134,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub-Repository",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "JavaScript-Copyrights sind im Quelltext enthalten.",
 		"footerlabelnowarranty": "Ohne Gew&auml;hr.",
 
@@ -8275,7 +8300,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Αποθετήριο GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Τα πνευματικά δικαιώματα της JavaScript περιλαμβάνονται στον κώδικα.",
 		"footerlabelnowarranty": "Καμία εγγύηση.",
 
@@ -8441,7 +8466,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repositorio GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Copyright del código JavaScript: en el fuente.",
 		"footerlabelnowarranty": "Sin garantía.",
 
@@ -8607,7 +8632,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Dépôt GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Les droits d'auteurs JavaScript sont inclus dans le code source.",
 		"footerlabelnowarranty": "Aucune garantie.",
 
@@ -8774,7 +8799,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub kódtár",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Az egyes JavaScript kódok szerzőinek jogai a forráskódon belül találhatók meg.",
 		"footerlabelnowarranty": "Garancia nincs.",
 
@@ -8947,7 +8972,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repository GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Le note di copyright dei file JavaScript sono inclusi nei sorgenti stessi.",
 		"footerlabelnowarranty": "Nessuna garanzia.",
 
@@ -9113,7 +9138,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHubリポジトリ",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "JavaScriptのコピーライト情報はソースに含まれています。",
 		"footerlabelnowarranty": "保障はありません。",
 
@@ -9286,7 +9311,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Repositório GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Copyright do código JavaScript: no código-fonte.",
 		"footerlabelnowarranty": "Sem garantia.",
 
@@ -9452,7 +9477,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "Проект на GitHub",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Копирайт bitaddress.org.",
+		"footerlabelcopyright1": "Копирайт GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "Информация о копирайте на JavaScript в исходниках.",
 		"footerlabelnowarranty": "Без гарантий.",
 
@@ -9617,7 +9642,7 @@ ninja.foreachSerialized = function (collection, whatToDo, onComplete) {
 		"footerlabelgithub": "GitHub页面",
 		"footerlabelgithubzip": "zip",
 		"footerlabelsig": "sig",
-		"footerlabelcopyright1": "Copyright bitaddress.org.",
+		"footerlabelcopyright1": "Copyright GERADORCARTEIRABITCOIN.COM.BR",
 		"footerlabelcopyright2": "JavaScript的版权信息已经包含在源代码中。",
 		"footerlabelnowarranty": "No warranty",
 
@@ -11076,7 +11101,7 @@ ninja.wallets.splitwallet = {
 				return true;
 			},
 			testBrainToECKey: function () {
-				var key = "bitaddress.org unit test";
+				var key = "GERADORCARTEIRABITCOIN.COM.BR unit test";
 				var bytes = Crypto.SHA256(key, { asBytes: true });
 				var btcKey = new Bitcoin.ECKey(bytes);
 				if (btcKey.getBitcoinWalletImportFormat() != "5J8QhiQtAiozKwyk3GCycAscg1tNaYhNdiiLey8vaDK8Bzm4znb") {
